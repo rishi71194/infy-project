@@ -1,0 +1,54 @@
+.mat-icon{
+    color: #bcd0f7;
+    vertical-align: center;
+    margin-right: 1rem;
+}
+
+.logo{
+    letter-spacing: 10px;
+}
+
+.mat-divider{
+    border-top-width: 2px;
+    border-color: #bcd0f7;
+}
+
+.mat-list-item{
+    color: #bcd0f7 !important;
+    font-size: 0.8rem;
+    height: 44px !important;
+    margin-bottom: 4px;
+    ::ng-deep{
+        .mat-list-item-content{
+            border-radius: 5px;
+            margin: 0 8px;
+            &:hover{
+        background: #2c3344 !important;
+    }
+        }
+    }
+}
+
+h1{
+    text-align: center;
+    color: #bcd0f7;
+}
+
+.list-item-active{
+    color:#f2f5f7 !important;
+    ::ng-deep{
+        .mat-list-item-content{
+            background: #2c3344 !important;
+            &:hover{
+                background: #2c3344 !important;
+            }
+        }
+    }
+}
+
+.mat-subheader{
+    color: #818cf8;
+    font-size: 0.7rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+}

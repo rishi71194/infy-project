@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-3">
+        <div class="col" *ngFor="let customer of customers">
+            <div class="card radius-15 bg-primary">
+                <div class="card-body text-center">
+                    <div class="p-4 radius-15">
+                        <h5 class="mb-0 text-white">{{customer?.customerName}}</h5>
+                        <p class="mb-3 text-white">{{customer?.customerId}}</p>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                            <mat-form-field appearance="fill">
+                            <mat-label>Shelf Life</mat-label>
+                            <mat-select>
+                                <mat-option *ngFor="let sl of shelfLife" [value]="sl.contractindex">
+                                {{sl.shelfLife}}
+                                </mat-option>
+                            </mat-select>
+                            </mat-form-field>
+                            </li>
+                          <li class="list-group-item">Service Level: <i>{{customer?.serviceLevel}}</i></li>
+                          <li class="list-group-item">Contract Index: <i>{{customer?.contractIndex}}</i></li>
+                       </ul>
+                        <div class="d-grid"> <a href="dashboard" class="btn btn-white radius-15">Negotiate</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

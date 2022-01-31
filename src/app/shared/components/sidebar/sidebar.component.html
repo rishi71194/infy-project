@@ -1,0 +1,33 @@
+<mat-nav-list>
+    <div class="logo py-4">
+        <h1>KROMS</h1>
+    </div>
+    <mat-divider></mat-divider>
+    <a mat-list-item routerLink="/dashboard" routerLinkActive="list-item-active" style="margin-top: 10px;">
+        <mat-icon>dashboard</mat-icon> Dashboard
+    </a>
+    <h2 matSubheader class="mt-2">ENTITIES</h2>
+    <a mat-list-item routerLink="/customers" routerLinkActive="list-item-active">
+        <mat-icon>supervised_user_circle</mat-icon> Customers
+    </a>
+    <a mat-list-item routerLink="/products" routerLinkActive="list-item-active">
+        <mat-icon>shopping_cart</mat-icon> Products
+    </a>
+    <h2 matSubheader class="mt-2">Reports</h2>
+    <a mat-list-item routerLink="/inventory" routerLinkActive="list-item-active">
+        <mat-icon>inventory</mat-icon> Inventory
+    </a>
+    <a mat-list-item routerLink="/production" routerLinkActive="list-item-active">
+        <mat-icon>assessment</mat-icon> Production
+    </a>
+    <a mat-list-item routerLink="/demanddelivery" routerLinkActive="list-item-active">
+        <mat-icon>swap_horizontal_circle</mat-icon> Demand vs Delivery
+    </a>
+    <h2 matSubheader class="mt-2">Tools</h2>
+    <a mat-list-item routerLink="/contractindex" routerLinkActive="list-item-active">
+        <mat-icon>gavel</mat-icon> Contract Index Calculator
+    </a>
+    <a mat-list-item routerLink="/bpcalculate" routerLinkActive="list-item-active">
+        <mat-icon>stars</mat-icon> Bonus/Penalty Calculator
+    </a>   
+</mat-nav-list>

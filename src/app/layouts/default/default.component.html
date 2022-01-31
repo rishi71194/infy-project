@@ -1,0 +1,13 @@
+
+
+<mat-drawer-container>
+    <mat-drawer mode="side" [opened]="sideBarOpen"><app-sidebar>This is the sidebar</app-sidebar></mat-drawer>
+    <mat-drawer-content>
+        <app-header (toggleSidebarOnClick)="sideBarToggler()">This is the header</app-header>
+        <router-outlet></router-outlet>
+
+    </mat-drawer-content>
+</mat-drawer-container>
+
+
+<app-footer>This is the footer</app-footer>
